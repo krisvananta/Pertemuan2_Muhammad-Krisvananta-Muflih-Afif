@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - Contoh Situs</title>
+    <title>Tentang Kami</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -16,6 +16,14 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color : #800000;
         }
         nav ul {
             list-style-type: none;
@@ -30,6 +38,18 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            color: #800000;
+            background-color:#ddd;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a.active {
+            background-color: #555;
+            color: #fff
         }
         main {
             padding: 20px;
@@ -47,6 +67,9 @@
             background-color: #333;
             color: #fff;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             padding: 10px;
         }
     </style>
@@ -58,7 +81,7 @@
         <nav>
             <ul>
                 <li><a href="Semantic HTML example.html">Beranda</a></li>
-                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="tentang.html" class="active">Tentang</a></li>
                 <li><a href="layanan.html">Layanan</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
             </ul>
